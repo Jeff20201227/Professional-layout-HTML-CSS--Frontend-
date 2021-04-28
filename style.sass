@@ -5,35 +5,33 @@
 @import 'checkout'
 @import 'animations'
 @import 'single_page'
-* 
+
+*
     margin: 0
     padding: 0
     box-sizing: border-box
 
-body 
+body
     font-family: 'Lato', sans-serif
 
-
-.wrapper 
+.wrapper
     min-height: 100vh
     min-width: 1140px
-    margin-left: 230px
-    margin-right: 230px
     display: flex
     flex-wrap: wrap
     justify-content: center
     flex-direction: column
 
-.top 
+.top
     flex-grow: 1
-    
-a 
+
+a
     text-decoration: none
 
-.center 
+.center
     padding: 0 calc(50% - 570px)
 
-.header 
+.header
     display: flex
     justify-content: space-between
     align-items: center
@@ -43,16 +41,16 @@ a
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
 
     &_left,
-    &_right 
+    &_right
         display: flex
         align-items: center
 
-    .header_form 
+    .header_form
         display: flex
         align-items: center
 
     .header_cart
-        position: relative 
+        position: relative
         width: 32px
         height: 29px
         right: 190px
@@ -61,18 +59,17 @@ a
 
         &:hover
             background-image: url(img/cart_pink.png)
-    
+
         &:hover .cart_fon
             display: flex
-            
 
     .header_search
         display: flex
         justify-content: space-between
-    
+
     form
-        .header_form 
-        margin-left: -379px
+        .header_form
+            margin-left: -379px
 
 .cart_fon
     display: none
@@ -171,12 +168,12 @@ h3.cart_product_h3
     margin-bottom: 16px
     margin-left: 17px
 
-.logo 
+.logo
     display: flex
     align-items: center
     margin-right: 46px
 
-span.Log1 
+span.Log1
     font-size: 27px
     font-weight: 300
     color: $colorLinkandText
@@ -185,7 +182,7 @@ span.Log1
     line-height: 32px
     text-transform: uppercase
 
-span.Log2 
+span.Log2
     font-size: 27px
     font-weight: 900
     color: $colorDisainer
@@ -243,7 +240,7 @@ a.Brows
     transform: rotate(360deg)
     border: 1px solid #e6e6e6
 
-.logo_img 
+.logo_img
     margin-right: 13px
 
 .button_Account
@@ -260,9 +257,9 @@ a.Brows
 .button_Account:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
     background-color: white
-    color: $colorDisainer 
+    color: $colorDisainer
 
-.menu 
+.menu
     list-style-type: none
     +d-center()
 
@@ -279,7 +276,7 @@ a.Brows
     display: flex
     flex-direction: column
 
-.menu_link 
+.menu_link
     font-size: 14px
     font-weight: 800
     color: $colorLinkandText
@@ -287,7 +284,7 @@ a.Brows
     padding: 20px
     display: block
 
-.menu_link_active 
+.menu_link_active
     border-bottom: 3px solid $colorDisainer
     padding-bottom: 18px
 
@@ -301,21 +298,18 @@ a.Brows
     padding: 12px 20px
     position: absolute
     display: none
-    z-index: 1;
+    z-index: 1
 
-.drop_last 
+.drop_last
     right: 0
 
-
-.drop_flex:not(:last-child) 
+.drop_flex:not(:last-child)
     margin-right: 46px
 
-
-.drop_ul 
+.drop_ul
     list-style-type: none
 
-
-.drop_h3 
+.drop_h3
     width: 234px
     border-bottom: $borderAtribute #e8e8e8
     font-size: 14px
@@ -325,16 +319,14 @@ a.Brows
     margin-bottom: 8px
     text-transform: uppercase
 
-
-.drop_a 
+.drop_a
     font-size: 14px
     color: #646464
     text-align: right
     letter-spacing: 0.03em
     line-height: 28px
 
-
-.drop_a:hover 
+.drop_a:hover
     color: $colorDisainer
 
 .drop2
@@ -353,7 +345,7 @@ a.Brows
     right: 18px
     bottom: 18px
 
-.promo 
+.promo
     background-color: #e8e8e8
     height: 613px
     background-image: url(img/promo.png)
@@ -361,7 +353,10 @@ a.Brows
     background-repeat: no-repeat
     position: relative
 
-.border-left 
+.border-inset
+    box-shadow: 1px 1px 0 #000 inset, -1px -1px 0 #000 inset
+
+.border-left
     height: 95px
     width: 12px
     background-color: $colorDisainer
@@ -394,7 +389,6 @@ a.Brows
     text-align: right
     letter-spacing: 0.03em
 
-    
 .centerPage
     display: flex
     flex-direction: column
@@ -412,7 +406,7 @@ a.Brows
     height: 261px
     margin-left: 230px
     margin-top: 20px
-    background-image: url(img/wallet.png) 
+    background-image: url(img/wallet.png)
 
 .centerPage_right_1
     display: inline-flex
@@ -429,7 +423,6 @@ a.Brows
     margin-left: 811px
     margin-top: 20px
     background-image: url(img/kid.png)
-    
 
 a.promo_01
     display: flex
@@ -445,7 +438,7 @@ a.promo_02
     margin-top: 26px
     background-color: white
 
-span.promo_1 
+span.promo_1
     display: grid
     align-items: center
     padding-left: 16px
@@ -462,7 +455,7 @@ span.promo_2
     letter-spacing: 0.03em
     text-transform: uppercase
 
-p.center_1 
+p.center_1
     font-size: 30px
     font-weight: bold
     color: $colorLinkandText
@@ -478,34 +471,30 @@ p.center_2
     letter-spacing: 0.03em
     line-height: 54px
 
-.product-box 
+.product-box
     padding-top: 50px
     padding-bottom: 50px
     display: flex
     justify-content: space-between
     flex-wrap: wrap
 
-
-.product 
+.product
     width: 263px
     position: relative
     margin-bottom: 46px
     transition: all .2s
 
-
-.product:hover 
+.product:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
     transform: scale(1.03)
 
-
-.product:hover .product_img 
+.product:hover .product_img
     filter: brightness(40%)
 
-
-.product:hover .product_add 
+.product:hover .product_add
     display: flex
 
-.product_add 
+.product_add
     position: absolute
     top: 97px
     left: 70px
@@ -519,20 +508,16 @@ p.center_2
     font-weight: bold
     color: $backColorHeader
 
-
-.product_add:hover 
+.product_add:hover
     box-shadow: 0px 0px 5px 0px white
 
-
-.product_img 
+.product_img
     width: 100%
 
-
-.product_content 
+.product_content
     padding: 19px 15px
 
-
-.product_name 
+.product_name
     font-size: 13px
     color: $colorLinkandText
     font-weight: 700
@@ -542,19 +527,18 @@ p.center_2
 .product_name:hover
     color: $colorDisainer
 
-
-.product_price 
+.product_price
     font-size: 16px
     font-weight: bold
     color: $colorDisainer
     text-transform: uppercase
     margin-top: 16px
 
-.product_cart 
+.product_cart
     margin-right: 8px
 
 .button_1
-        +d-center() 
+    +d-center()
         border: $borderAtribute $colorDisainer
         background-color: $colorDisainer
         height: 48px
@@ -563,10 +547,10 @@ p.center_2
         margin-left: 50%
         margin-bottom: 113px
 
-.button_1:hover 
+.button_1:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
     background-color: white
-    color: $colorDisainer 
+    color: $colorDisainer
 
 .snow
     height: 529px
@@ -608,7 +592,7 @@ p.center_2
     display: flex
     flex-direction: column
     width: 373px
-    height: 529px    
+    height: 529px
 
 .icon_1
     width: 45px
@@ -635,7 +619,7 @@ p.center_2
     margin-top: -105px
     height: 20px
 
-h2.text 
+h2.text
     +d-center()
     font-size: 20px
     font-weight: bold
@@ -648,7 +632,7 @@ h2.text
 .text_3
     margin-top: 20px
 
-p.text 
+p.text
     height: 93px
     width: 236px
     font-size: 14px
@@ -678,7 +662,7 @@ img.ava
     width: 83px
     height: 83px
 
-p.subtext 
+p.subtext
     margin-left: 341px
     margin-top: -69px
     height: 197px
@@ -688,7 +672,7 @@ p.subtext
     color: $colorSubText
     letter-spacing: 0.03em
     line-height: 26px
-    
+
 .subtext_1
     display: flex
     flex-direction: column
@@ -711,7 +695,7 @@ p.subtext
 .submail
     position: relative
 
-h2.sub_h 
+h2.sub_h
     display: flex
     flex-direction: column
     width: 277px
@@ -780,7 +764,7 @@ summary:focus
 .pred_text
     position: relative
 
-p.pred_footer_1 
+p.pred_footer_1
     margin-left: 228px
     margin-top: 29px
     height: 204px
@@ -816,7 +800,7 @@ p.pred_footer_2
 
 .pred_foot_2
     margin-left: 950px
-    
+
 .pred_foot_3
     margin-left: 1173px
 
@@ -849,14 +833,13 @@ ul.pred_footer_4
     margin-top: -340px
     margin-left: 951px
 
-
 ul.pred_footer_5
     display: flex
     flex-direction: column
     margin-top: -336px
     margin-left: 1170px
 
-a.links_footer 
+a.links_footer
     font-size: 16px
     color: $colorPredFooter
     text-align: right
@@ -867,13 +850,13 @@ a.links_footer:hover
     color: $colorDisainer
     animation: text-shadow-drop-center 1.5s ease-out infinite alternate both
 
-ul 
+ul
     list-style: none
-    
+
 .footer_li
     padding-bottom: 25px
 
-.footer 
+.footer
     background-color: $backColorFooter
     font-size: 16px
     color: #7a7a7a
@@ -884,10 +867,10 @@ ul
     height: 79px
     margin-top: 65px
 
-span.footer_text 
+span.footer_text
     margin-left: 228px
 
-.awesome_icon 
+.awesome_icon
     display: flex
     margin-left: 690px
     width: 191px
@@ -908,13 +891,3 @@ span.footer_text
     font-size: 18px
     background-color: $colorDisainer
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
-
-
-
-
-
-
-
-
-
-
