@@ -2082,13 +2082,26 @@ a.Brows {
   position: relative;
 }
 
+p.promo_logo_1 {
+  display: flex;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #222222;
+    width: 485px;
+    height: 92px;
+    padding-top: 224px;
+}
+
 .border-left {
-  height: 95px;
-  width: 12px;
-  background-color: #f16d7f;
-  position: absolute;
-  left: 210px;
-  top: 239px;
+    background-color: #f16d7f;
+    padding-right: 12px;
+    margin-right: 12px;
+    width: 12px;
+    height: 140px;
 }
 
 .promo_text {
