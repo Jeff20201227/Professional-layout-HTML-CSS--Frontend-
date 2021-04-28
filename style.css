@@ -2187,6 +2187,10 @@ p.promo_logo_1 {
   margin-bottom: 20px;
 }
 
+.centerPage_image:hover {
+  filter: brightness(65%);
+}
+
 .centerPage_1 {
   background-image: url(img/photo_for_man.png);
   height: 542px;
@@ -2210,44 +2214,6 @@ p.promo_logo_1 {
   height: 542px;
   width: 560px;
 }
-
-/* .centerPage_left_1 {
-  width: 560px;
-  height: 542px;
-  margin-left: 230px;
-  margin-top: 98px;
-  background-image: url(img/photo_for_man.png);
-}
-
-.centerPage_left_2 {
-  width: 560px;
-  height: 261px;
-  margin-left: 230px;
-  margin-top: 20px;
-  background-image: url(img/wallet.png);
-}
-
-.centerPage_right_1 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 560px;
-  height: 261px;
-  margin-left: 811px;
-  margin-top: -823px;
-  background-image: url(img/women.png);
-}
-
-.centerPage_right_2 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 560px;
-  height: 542px;
-  margin-left: 811px;
-  margin-top: 20px;
-  background-image: url(img/kid.png);
-} */
 
 a.promo_01 {
   display: flex;
@@ -2340,12 +2306,19 @@ p.center_2 {
   max-width: 1365px;
 }
 
+.product_pack {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 39px;
+}
+
 .product {
   width: 263px;
   position: relative;
   margin-bottom: 46px;
   -webkit-transition: all .2s;
   transition: all .2s;
+  margin-right: 32px;
 }
 
 .product:hover {
@@ -2423,16 +2396,16 @@ p.center_2 {
 }
 
 .button_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #f16d7f;
-    background-color: #f16d7f;
-    height: 48px;
-    width: 212px;
-    color: white;
-    margin: 0 auto;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+  height: 48px;
+  width: 212px;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .button_1:hover {
@@ -2443,13 +2416,14 @@ p.center_2 {
 }
 
 .snow {
-  height: 529px;
-  width: 1140px;
-  background-color: black;
-  margin-left: 229px;
-  margin-right: 231px;
-  background-image: url(img/snow_effect.png), url(img/women_snow.webp);
-  background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    min-height: 529px;
+    min-width: 1140px;
+    background-color: black;
+    background-image: url(img/snow_effect.png), url(img/women_snow.webp);
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .text_fon {
@@ -2516,32 +2490,18 @@ p.center_2 {
 }
 
 .text_fon_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 925px;
-  margin-top: -105px;
-  height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
 }
 
 h2.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-size: 20px;
   font-weight: bold;
   color: #fbfbfb;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.5px;
 }
 
 .text_2 {
@@ -2658,14 +2618,17 @@ h2.sub_h {
   line-height: 24px;
 }
 
+.form_submit {
+  display: flex;
+}
+
 .email_subscribe {
   margin-left: 892px;
   padding-left: 28px;
-  padding-right: 120px;
   height: 46px;
-  width: 385px;
+  width: 282px;
   background-color: #e1e1e1;
-  border-radius: 23px;
+  border-radius: 23px 0 0 23px;
 }
 
 input:focus {
@@ -2681,8 +2644,6 @@ summary:focus {
 }
 
 .button_Subs {
-  position: absolute;
-  left: 1186px;
   height: 46px;
   width: 104px;
   background-color: #f16d7f;
