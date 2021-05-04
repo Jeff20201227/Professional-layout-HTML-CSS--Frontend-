@@ -149,6 +149,10 @@ summary.summary_product[open]:after {
   color: #f16d7f;
 }
 
+summary.summary_name {
+  list-style: none;
+}
+
 .table {
   position: relative;
   height: 50px;
@@ -544,29 +548,38 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]+label {
-  display: block;
+  display: flex;
   width: 13px;
   height: 13px;
   margin: 8px;
   background: #fff;
   border: 1px solid #ebebeb;
   text-align: center;
+  align-items: center;
 }
 
-input[type=checkbox]+label:before {
-  font-size: 20px;
-}
+input[type=checkbox]+label:before {}
 
 input[type=checkbox]:checked+label {
   border: 1px solid #f16d7f;
 }
 
 input[type=checkbox]:checked+label:before {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #f16d7f;
   margin-top: -12px;
+  content: '✔';
+  font-size: 20px;
+  padding-left: 0;
+}
+
+.check_p {
+  display: flex;
+  margin-top: 3px;
+}
+
+.zero {
+  margin-right: 15px;
 }
 
 .checktext {
@@ -583,10 +596,7 @@ input[type=checkbox]:checked+label:before {
   color: #f16d7f;
 }
 
-.check_p {
-  display: block;
-  margin-left: 9px;
-}
+
 
 .chop_cart_product {
   height: 1142px;
@@ -1870,6 +1880,7 @@ span.Log2 {
   letter-spacing: 0.03em;
   line-height: 32px;
   text-transform: uppercase;
+  margin-right: 57px;
 }
 
 .input_search {
@@ -1889,7 +1900,6 @@ span.Log2 {
   border-radius: 3px 0px 0px 3px;
   padding: 9px;
   background-color: #ececec;
-  margin-left: 57px;
 }
 
 a.Brows {
@@ -2038,6 +2048,11 @@ a.Brows {
   right: 0;
 }
 
+.drop_flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .drop_flex:not(:last-child) {
   margin-right: 46px;
 }
@@ -2058,6 +2073,7 @@ a.Brows {
 }
 
 .drop_a {
+  display: flex;
   font-size: 14px;
   color: #646464;
   text-align: right;
@@ -2075,7 +2091,6 @@ a.Brows {
   border-radius: 5px;
   padding: 12px 15px;
   position: absolute;
-  left: 50px;
   z-index: 1;
 }
 
@@ -2114,8 +2129,11 @@ p.promo_logo_1 {
   background-color: #f16d7f;
   padding-right: 12px;
   margin-right: 12px;
+  margin-top: 145px;
   width: 12px;
-  height: 140px;
+  align-self: center;
+  height: 118px;
+  display: flex;
 }
 
 .promo_text {
@@ -2415,15 +2433,16 @@ p.center_2 {
   color: #f16d7f;
 }
 
+
 .snow {
-    display: flex;
-    justify-content: space-between;
-    min-height: 529px;
-    min-width: 1140px;
-    background-color: black;
-    background-image: url(img/snow_effect.png), url(img/women_snow.webp);
-    background-repeat: no-repeat;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 529px;
+  min-width: 1140px;
+  background-color: black;
+  background-image: url(img/women_snow.webp);
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .text_fon {
@@ -2490,9 +2509,9 @@ p.center_2 {
 }
 
 .text_fon_right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
 }
 
 h2.text {
@@ -2525,6 +2544,7 @@ p.text {
 }
 
 .subsscrib {
+  display: flex;
   height: 438px;
   background-image: url(img/subs-effect.png), url(img/fons.png);
   background-size: cover;
@@ -2533,6 +2553,9 @@ p.text {
   margin-top: 97px;
   margin-bottom: 109px;
 }
+
+
+
 
 .subs_text {
   width: 1048px;
@@ -2573,6 +2596,7 @@ p.subtext {
   color: #f16d7f;
   letter-spacing: 0.03em;
   line-height: 26px;
+  padding-top: 18px;
 }
 
 .subtext_2 {
@@ -2584,8 +2608,28 @@ p.subtext {
   line-height: 14px;
 }
 
-.submail {
-  position: relative;
+.slider_footer {
+  display: inline-block;
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+  margin-right: 12px;
+}
+
+.slider_footer:hover {
+  background-color: #f16d7f;
+}
+
+.slider_footer:first-child {
+  margin-left: 344px;
+}
+
+.slider_footer_div {
+  padding-top: 41px;
+}
+
+.slider_footer_active {
+  background-color: #f16d7f;
 }
 
 h2.sub_h {
@@ -2597,9 +2641,7 @@ h2.sub_h {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 277px;
-  margin-left: 946px;
-  margin-top: -49px;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 .subtext_3 {
@@ -2618,12 +2660,24 @@ h2.sub_h {
   line-height: 24px;
 }
 
-.form_submit {
+.form_submit {}
+
+.subsscrib_div {
   display: flex;
+  min-width: 1048px;
+}
+
+.div1 {
+  padding-top: 148px;
+  padding-right: 377px;
+}
+
+.div_2 {
+  display: flex;
+  margin-left: -54px;
 }
 
 .email_subscribe {
-  margin-left: 892px;
   padding-left: 28px;
   height: 46px;
   width: 282px;
@@ -2671,6 +2725,8 @@ summary:focus {
 
 .pred_footer {
   height: 349px;
+  padding-right: 273px;
+  padding-left: 228px;
 }
 
 .logo_2 {
