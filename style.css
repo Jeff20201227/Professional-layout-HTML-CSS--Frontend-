@@ -2592,6 +2592,7 @@ p.subtext {
   color: #f16d7f;
   letter-spacing: 0.03em;
   line-height: 26px;
+  padding-top: 18px;
 }
 
 .subtext_2 {
@@ -2617,6 +2618,10 @@ p.subtext {
 
 .slider_footer:first-child {
   margin-left: 344px;
+}
+
+.slider_footer_div {
+    padding-top: 41px;
 }
 
 h2.sub_h {
@@ -2650,13 +2655,19 @@ h2.sub_h {
 .form_submit {
 }
 
+.subsscrib_div {
+    display: flex;
+    min-width: 1048px;
+}
+
 .div1 {
-    margin-top: 148px;
-    margin-right: 377px;
+    padding-top: 148px;
+    padding-right: 377px;
 }
 
 .div_2 {
     display: flex;
+    margin-left: -54px;
 }
 
 .email_subscribe {
