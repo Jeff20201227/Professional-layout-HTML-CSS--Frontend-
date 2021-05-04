@@ -2038,19 +2038,36 @@ a.Brows {
 .drop {
   background-color: #fff;
   border-radius: 5px;
-  padding: 12px 20px;
+  padding: 20px;
   position: absolute;
   display: none;
   z-index: 1;
+  border: 1px solid #e8e8e8;
+  top: 47px;
+  left: -1px;
 }
 
-.drop_last {
+.drop::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+  left: 33px;
+  transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+
+.last:hover .drop {
   right: 0;
 }
 
 .drop_flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .drop_flex:not(:last-child) {
@@ -2073,10 +2090,9 @@ a.Brows {
 }
 
 .drop_a {
-  display: flex;
+  display: block;
   font-size: 14px;
   color: #646464;
-  text-align: right;
   letter-spacing: 0.03em;
   line-height: 28px;
 }
