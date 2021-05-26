@@ -1,4 +1,4 @@
-.promo_productPage      
+.promo_productPage
     background-color: #f8f3f4
     height: 148px
 
@@ -10,7 +10,7 @@
     line-height: 20px
     text-transform: uppercase
 
-.promo_productPage_right 
+.promo_productPage_right
     display: flex
     flex-direction: row
     width: 196px
@@ -45,7 +45,7 @@
     width: 243px
     padding-left: 17px
 
-.product-box2 
+.product-box2
     padding-top: 50px
     padding-bottom: 50px
     display: flex
@@ -58,7 +58,7 @@
 .product__img2
     width: 100%
 
-.product:hover .product__img2 
+.product:hover .product__img2
     filter: brightness(40%)
 
 .product_aside
@@ -90,7 +90,7 @@ summary.summary_product
 details summary.summary_product::-webkit-details-marker
     display: none
 
-details summary.summary_product:after 
+details summary.summary_product:after
     content: '\f107'
     font-family: "Font Awesome 5 free"
     position: absolute
@@ -99,13 +99,13 @@ details summary.summary_product:after
 details[open] summary.summary_product
     color: $colorDisainer
 
-details[open] summary.summary_product:after 
+details[open] summary.summary_product:after
     content: '\f106'
     position: absolute
     left: 164px
     color: $colorDisainer
 
-summary.summary_product[open]:after 
+summary.summary_product[open]:after
     color: $colorDisainer
 
 .table
@@ -142,6 +142,8 @@ span.sort_text
 details summary.summary_name::-webkit-details-marker
     display: none
 
+summary.summary_name
+    list-style: none
 
 .sum_down
     margin-left: 21px
@@ -149,7 +151,7 @@ details summary.summary_name::-webkit-details-marker
 details.Name_details[open] .summary_name
     color: $colorDisainer
 
-details.Name_details[open] .summary_name:after 
+details.Name_details[open] .summary_name:after
     color: $colorDisainer
 
 .sort_number
@@ -194,7 +196,7 @@ details.Name_details[open] .summary_name:after
     border: 1px solid #ebebeb
     border-radius: 3px
 
-span.post_text1 
+span.post_text1
     margin-left: 39px
     margin-right: 39px
     font-family: 'Lato'
@@ -215,9 +217,8 @@ a.post_link:hover
     font-weight: bold
     color: #ef5b70
 
-
 .post_product_2
-    +d-center() 
+    +d-center()
     height: 44px
     width: 150px
     background-color: #ffffff
@@ -230,7 +231,7 @@ span.post_text_3
     color: white
     line-height: 26px
 
-span.post_text_3:hover 
+span.post_text_3:hover
     color: $colorDisainer
 
 .snow2
@@ -267,7 +268,7 @@ img.icon_6
     justify-content: center
     padding-top: 89px
 
-.Delivery 
+.Delivery
     +d-center()
     flex-direction: column
     margin-left: 3%
@@ -289,7 +290,6 @@ p.Worldwide
     color: #fbfbfb
     letter-spacing: 0.03em
     line-height: 24px
-
 
 .top_filter
     width: 845px
@@ -314,7 +314,7 @@ a.fashion_link:hover
     display: flex
     justify-content: center
 
-.h_trend 
+.h_trend
     font-size: 14px
     font-weight: bold
     color: $colorSummaryText
@@ -326,7 +326,6 @@ a.fashion_link:hover
 
 span.h_trend.h_price
     margin-left: 260px
-
 
 .fashion_link
     font-size: 14px
@@ -344,14 +343,14 @@ span.h_trend.h_price
     color: #dfdfdf
     line-height: 26px
 
-.checkbox_line_1 
+.checkbox_line_1
     display: flex
     justify-content: space-between
     width: 211px
     margin-left: 293px
     margin-top: -47px
 
-label 
+label
     margin-right: 23px
 
 .checkbox_line_2
@@ -363,30 +362,29 @@ label
 input#XL
     margin-left: 21px
 
-input[type=checkbox] 
+input[type=checkbox]
     display: none
 
 input[type=checkbox] + label
-    display: block
+    display: flex
     width: 13px
     height: 13px
     margin: 8px
     background: $backColorHeader
-    border: $borderAtribute $colorBorder_2    
-    text-align: center    
-
-input[type=checkbox] + label:before
-    font-size: 20px
+    border: $borderAtribute $colorBorder_2
+    text-align: center
+    align-items: center
 
 input[type=checkbox]:checked + label
     border: $borderAtribute $colorDisainer
 
 input[type=checkbox]:checked + label:before
     display: flex
-    // content: '✔'
-    color: $colorDisainer 
+    color: $colorDisainer
     margin-top: -12px
-    
+    content: '✔'
+    font-size: 20px
+    padding-left: 0
 
 .checktext
     display: flex
@@ -400,5 +398,8 @@ input[type=checkbox]:checked + label:before
     color: $colorDisainer
 
 .check_p
-    display: block
-    margin-left: 9px
+    display: flex
+    margin-top: 3px
+
+.zero
+    margin-right: 15px

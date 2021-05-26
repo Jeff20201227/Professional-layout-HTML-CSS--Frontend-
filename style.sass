@@ -76,7 +76,7 @@ a
     flex-direction: column
     position: absolute
     width: 262px
-    background-color: #ffffff
+    background-color: $backColorHeader
     border-radius: 5px
     z-index: 1
     margin-top: 30px
@@ -103,7 +103,7 @@ a
 .cart_text_fon_1
     font-size: 12px
     font-weight: bold
-    color: #222222
+    color: $colorLinkandText
     text-transform: uppercase
 
 span.cart_fon_2
@@ -113,7 +113,7 @@ span.cart_fon_2
 
 .cart_text_fon_3
     font-size: 12px
-    color: #f16d7f
+    color: $colorDisainer
     text-transform: uppercase
 
 .cart_product_text_position_h_1
@@ -136,11 +136,11 @@ h3.cart_product_h3
     align-items: center
     height: 50px
     width: 225px
-    background-color: #fff
-    border: 1px solid #eaeaea
+    background-color: $backColorHeader
+    border: $borderAtribute #eaeaea
 
 .cart_product_fon_button_1:hover
-    border: 1px solid #f16d7f
+    border: $borderAtribute $colorDisainer
 
 .cart_product_fon_button_1_position_1
     margin-top: 32px
@@ -158,7 +158,7 @@ h3.cart_product_h3
     text-transform: uppercase
 
 .cart_fon_3:hover
-    color: #f16d7f
+    color: $colorDisainer
 
 .borders_cart_2
     height: 1px
@@ -190,6 +190,7 @@ span.Log2
     letter-spacing: 0.03em
     line-height: 32px
     text-transform: uppercase
+    margin-right: 57px
 
 .input_search
     padding-left: 15px
@@ -207,7 +208,6 @@ span.Log2
     border-radius: 3px 0px 0px 3px
     padding: 9px
     background-color: $colorBorder
-    margin-left: 57px
 
 a.Brows
     display: flex
@@ -238,7 +238,7 @@ a.Brows
     align-items: center
     color: $colorDisainer
     transform: rotate(360deg)
-    border: 1px solid #e6e6e6
+    border: $borderAtribute #e6e6e6
 
 .logo_img
     margin-right: 13px
@@ -295,13 +295,33 @@ a.Brows
 .drop
     background-color: $backColorHeader
     border-radius: 5px
-    padding: 12px 20px
+    padding: 20px
     position: absolute
     display: none
     z-index: 1
+    border: $borderAtribute $colorBorder_3
+    top: 47px
+    left: -1px
 
-.drop_last
+.drop::before
+    content: ""
+    display: block
+    width: 12px
+    height: 12px
+    background-color: white
+    position: absolute
+    top: -8px
+    left: 33px
+    transform: rotate(45deg)
+    border-top: $borderAtribute $colorBorder_3
+    border-left: $borderAtribute $colorBorder_3
+
+.last:hover .drop
     right: 0
+
+.drop_flex
+    display: flex
+    flex-direction: column
 
 .drop_flex:not(:last-child)
     margin-right: 46px
@@ -311,7 +331,7 @@ a.Brows
 
 .drop_h3
     width: 234px
-    border-bottom: $borderAtribute #e8e8e8
+    border-bottom: $borderAtribute $colorBorder_3
     font-size: 14px
     color: #232323
     letter-spacing: 0.03em
@@ -320,9 +340,9 @@ a.Brows
     text-transform: uppercase
 
 .drop_a
+    display: block
     font-size: 14px
     color: #646464
-    text-align: right
     letter-spacing: 0.03em
     line-height: 28px
 
@@ -335,7 +355,6 @@ a.Brows
     border-radius: 5px
     padding: 12px 15px
     position: absolute
-    left: 50px
     z-index: 1
 
 .super-sale
@@ -346,7 +365,7 @@ a.Brows
     bottom: 18px
 
 .promo
-    background-color: #e8e8e8
+    background-color: $colorBorder_3
     height: 613px
     background-image: url(img/promo.png)
     background-position: center -51px
@@ -356,13 +375,28 @@ a.Brows
 .border-inset
     box-shadow: 1px 1px 0 #000 inset, -1px -1px 0 #000 inset
 
+p.promo_logo_1
+    display: flex
+    font-size: 40px
+    font-weight: 900
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: 1px
+    color: $colorLinkandText
+    width: 485px
+    height: 92px
+    padding-top: 224px
+
 .border-left
-    height: 95px
-    width: 12px
     background-color: $colorDisainer
-    position: absolute
-    left: 210px
-    top: 239px
+    padding-right: 12px
+    margin-right: 12px
+    margin-top: 145px
+    width: 12px
+    align-self: center
+    height: 118px
+    display: flex
 
 .promo_text
     width: 485px
@@ -389,100 +423,143 @@ a.Brows
     text-align: right
     letter-spacing: 0.03em
 
-.centerPage
+.centerPage2
+    display: flex
+    margin: 0 auto
+
+.centerPage_left_1_1
+    padding-top: 98px
+    padding-bottom: 100px
     display: flex
     flex-direction: column
-    justify-content: space-between
-
-.centerPage_left_1
     width: 560px
-    height: 542px
-    margin-left: 230px
-    margin-top: 98px
+    margin-right: 20px
+
+.centerPage_right_1_1
+    padding-top: 98px
+    padding-bottom: 100px
+    display: flex
+    flex-direction: column
+    width: 560px
+    margin-right: 20px
+
+.centerPage_image
+    margin-bottom: 20px
+
+.centerPage_image:hover
+    filter: brightness(65%)
+
+.centerPage_1
     background-image: url(img/photo_for_man.png)
-
-.centerPage_left_2
-    width: 560px
-    height: 261px
-    margin-left: 230px
-    margin-top: 20px
-    background-image: url(img/wallet.png)
-
-.centerPage_right_1
-    display: inline-flex
-    width: 560px
-    height: 261px
-    margin-left: 811px
-    margin-top: -823px
-    background-image: url(img/women.png)
-
-.centerPage_right_2
-    display: inline-flex
-    width: 560px
     height: 542px
-    margin-left: 811px
-    margin-top: 20px
+    width: 560px
+
+.centerPage_2
+    background-image: url(img/wallet.png)
+    height: 259px
+    width: 560px
+
+.centerPage_3
+    background-image: url(img/women.png)
+    height: 261px
+    width: 560px
+
+.centerPage_4
     background-image: url(img/kid.png)
+    height: 542px
+    width: 560px
 
 a.promo_01
     display: flex
-    width: 175px
-    height: 82px
+    flex-direction: column
+    width: max-content
+    min-height: 82px
     margin-top: 26px
+    padding-right: 20px
+    background-color: white
+
+span.promo_01
+    display: flex
+    flex-direction: column
+    width: max-content
+    min-height: 82px
+    margin-top: 26px
+    padding-right: 20px
     background-color: white
 
 a.promo_02
     display: flex
-    width: 225px
-    height: 82px
-    margin-top: 26px
+    flex-direction: column
+    width: max-content
+    min-height: 82px
+    padding-right: 20px
     background-color: white
 
 span.promo_1
-    display: grid
+    display: flex
     align-items: center
     padding-left: 16px
+    padding-top: 16px
     font-size: 18px
     font-weight: 900
     color: $colorLinkandText
-    letter-spacing: 0.03em
+    letter-spacing: 0.45px
     text-transform: uppercase
+
+span.promo_1_2
+    padding-bottom: 16px
+    font-size: 30px
+    letter-spacing: 0.75px
+    color: $colorDisainer
 
 span.promo_2
     font-size: 30px
     font-weight: 900
     color: $colorDisainer
-    letter-spacing: 0.03em
+    letter-spacing: 0.45px
     text-transform: uppercase
 
+.center_text
+    display: flex
+    flex-direction: column
+
 p.center_1
+    display: flex
+    justify-content: center
     font-size: 30px
     font-weight: bold
+    letter-spacing: 0.75px
+    padding-bottom: 16px
     color: $colorLinkandText
-    text-align: center
-    letter-spacing: 0.03em
-    line-height: 54px
-    margin-top: 100px
 
 p.center_2
+    display: flex
+    justify-content: center
     font-size: 14px
     color: #9f9f9f
     text-align: center
-    letter-spacing: 0.03em
-    line-height: 54px
+    letter-spacing: 0.35px
+    padding-bottom: 60px
 
 .product-box
-    padding-top: 50px
     padding-bottom: 50px
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    margin: 0 auto
+    max-width: 1365px
+
+.product_pack
+    display: flex
+    justify-content: space-between
+    padding-bottom: 39px
 
 .product
     width: 263px
     position: relative
     margin-bottom: 46px
     transition: all .2s
+    margin-right: 32px
 
 .product:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
@@ -539,13 +616,13 @@ p.center_2
 
 .button_1
     +d-center()
-        border: $borderAtribute $colorDisainer
-        background-color: $colorDisainer
-        height: 48px
-        width: 212px
-        color: white
-        margin-left: 50%
-        margin-bottom: 113px
+    border: $borderAtribute $colorDisainer
+    background-color: $colorDisainer
+    height: 48px
+    width: 212px
+    color: white
+    margin: 0 auto
+    margin-bottom: 100px
 
 .button_1:hover
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
@@ -553,13 +630,14 @@ p.center_2
     color: $colorDisainer
 
 .snow
-    height: 529px
-    width: 1140px
+    display: flex
+    justify-content: space-between
+    min-height: 529px
+    min-width: 1140px
     background-color: black
-    margin-left: 229px
-    margin-right: 231px
-    background-image: url(img/snow_effect.png), url(img/women_snow.webp)
+    background-image: url(img/women_snow.webp)
     background-repeat: no-repeat
+    margin: 0 auto
 
 .text_fon
     width: 293px
@@ -615,16 +693,14 @@ p.center_2
 .text_fon_right
     display: flex
     flex-direction: column
-    margin-left: 925px
-    margin-top: -105px
-    height: 20px
+    margin-top: 45px
 
 h2.text
     +d-center()
     font-size: 20px
     font-weight: bold
     color: #fbfbfb
-    letter-spacing: 0.03em
+    letter-spacing: 0.5px
 
 .text_2
     margin-top: 27px
@@ -644,6 +720,7 @@ p.text
     padding-right: 32px
 
 .subsscrib
+    display: flex
     height: 438px
     background-image: url(img/subs-effect.png), url(img/fons.png)
     background-size: cover
@@ -683,6 +760,7 @@ p.subtext
     color: $colorDisainer
     letter-spacing: 0.03em
     line-height: 26px
+    padding-top: 18px
 
 .subtext_2
     margin-left: 343px
@@ -692,16 +770,30 @@ p.subtext
     letter-spacing: 0.03em
     line-height: 14px
 
-.submail
-    position: relative
+.slider_footer
+    display: inline-block
+    width: 38px
+    height: 4px
+    background-color: #d6d6d6
+    margin-right: 12px
+
+.slider_footer:hover
+    background-color: $colorDisainer
+
+.slider_footer:first-child
+    margin-left: 344px
+
+.slider_footer_div
+    padding-top: 41px
+
+.slider_footer_active
+    background-color: $colorDisainer
 
 h2.sub_h
     display: flex
     flex-direction: column
     width: 277px
-    margin-left: 946px
-    margin-top: -49px
-    margin-bottom: 35px
+    padding-bottom: 35px
 
 .subtext_3
     font-size: 24px
@@ -717,14 +809,24 @@ h2.sub_h
     letter-spacing: 0.01em
     line-height: 24px
 
+.subsscrib_div
+    display: flex
+    min-width: 1048px
+
+.div1
+    padding-top: 148px
+    padding-right: 377px
+
+.div_2
+    display: flex
+    margin-left: -54px
+
 .email_subscribe
-    margin-left: 892px
     padding-left: 28px
-    padding-right: 120px
     height: 46px
-    width: 385px
+    width: 282px
     background-color: #e1e1e1
-    border-radius: 23px
+    border-radius: 23px 0 0 23px
 
 input:focus
     outline: none
@@ -736,8 +838,6 @@ summary:focus
     outline: none
 
 .button_Subs
-    position: absolute
-    left: 1186px
     height: 46px
     width: 104px
     background-color: $colorDisainer
@@ -757,6 +857,8 @@ summary:focus
 
 .pred_footer
     height: 349px
+    padding-right: 273px
+    padding-left: 228px
 
 .logo_2
     margin-left: 228px
