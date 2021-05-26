@@ -1715,7 +1715,7 @@ a {
           flex-direction: column;
   position: absolute;
   width: 262px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   z-index: 1;
   margin-top: 30px;
@@ -1960,8 +1960,8 @@ a.Brows {
   height: 38px;
   width: 130px;
   color: white;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .button_Account:hover {
@@ -2500,6 +2500,8 @@ p.center_2 {
   color: white;
   margin: 0 auto;
   margin-bottom: 100px;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .button_1:hover {
