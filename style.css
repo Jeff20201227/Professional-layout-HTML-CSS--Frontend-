@@ -1004,6 +1004,15 @@ details[open] .summary_adress:after {
   text-transform: uppercase;
 }
 
+button.button_checkout_submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  border: none;
+}
+
 .button_Account_2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,10 +1035,6 @@ details[open] .summary_adress:after {
           box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
   -webkit-animation: vibrate-1 0.3s linear infinite both;
           animation: vibrate-1 0.3s linear infinite both;
-}
-
-.position_button_2 {
-  margin-left: 44px;
 }
 
 .button_text_cart {
@@ -2777,6 +2782,7 @@ h2.sub_h {
   width: 282px;
   background-color: #e1e1e1;
   border-radius: 23px 0 0 23px;
+  border: none;
 }
 
 input:focus {
@@ -2796,6 +2802,7 @@ summary:focus {
   width: 104px;
   background-color: #f16d7f;
   border-radius: 0px 23px 23px 0px;
+  border: none;
 }
 
 .by {
